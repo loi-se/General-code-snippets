@@ -1,7 +1,7 @@
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-1  DATABASE TOOLS:
+**1  DATABASE TOOLS:**
 
 Installing EF Power Tools into VS2015:<br>
 http://thedatafarm.com/data-access/installing-ef-power-tools-into-vs2015/
@@ -24,7 +24,7 @@ https://dev.mysql.com/downloads/mysql/
 <br>
 <br>
 
-2   DEVELOPMENT TOOLS:
+**2   DEVELOPMENT TOOLS:**
 
 Re-Sharper:<br>
 https://www.jetbrains.com/resharper/
@@ -37,9 +37,9 @@ https://addons.mozilla.org/nl/firefox/addon/firebug/
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-3  CODE EXAMPLES
+**3  CODE EXAMPLES**
 
-3.1 SQL Database
+**3.1 SQL Database**
 
 MySQL connector:<br> 
 https://dev.mysql.com/doc/connector-net/en/connector-net-programming-connecting-open.html
@@ -47,18 +47,18 @@ https://dev.mysql.com/doc/connector-net/en/connector-net-programming-connecting-
 <br>
 
 
-3.2 ASP.net 
+**3.2 ASP.net** 
 
 Page-Life-Cycle events:<br> 
 https://msdn.microsoft.com/en-us/library/ms178472.aspx?f=255&MSPPError=-2147217396
 <br>
 <br>
 
-3.3 C#
+**3.3 C#**
 <br>
 <br>
 
-3.4 Javascript / Jquery
+**3.4 Javascript / Jquery**
 
 Ajax calls:<br>
 http://www.aspsnippets.com/Articles/Call-ASPNet-Page-Method-using-jQuery-AJAX-Example.aspx
@@ -66,7 +66,7 @@ http://www.aspsnippets.com/Articles/Call-ASPNet-Page-Method-using-jQuery-AJAX-Ex
 <br>
 
 
-3.5  HTML 5/ CSS
+**3.5  HTML 5/ CSS**
 
 
 
