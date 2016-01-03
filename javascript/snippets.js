@@ -61,6 +61,11 @@ for (c = 0; c < 10; c += 1) {
   // …
 }
 
+for (i=0;i<100;i++) {
+
+}
+
+
 // for each loop
 for (element in object) {
   // …
