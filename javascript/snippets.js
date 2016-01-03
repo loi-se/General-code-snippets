@@ -1,7 +1,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 <script type = "text/javascript">
 
-// Ajax call
+//---------------------------------- 0. Ajax calls
 function ShowCurrentTime() {
     $.ajax({
         type: "POST",
@@ -27,7 +27,8 @@ function OnSuccess(response) {
     alert('Your OS: ' + OSName);
 }
 
-// 1. Control structures
+
+// -----------------------1. Control structures
 
 //If
 if (a === b) {
@@ -82,6 +83,34 @@ default:
 with (expression) {
   // statement
 }
+
+
+//-------------------------------- 2. Data Structures:
+// Array
+var fruits = ["Apple", "Orange", "Donkey"];
+
+alert(fruits[0]);
+alert(fruits[1]);
+alert(fruits[2]);
+
+alert(fruits.length);
+
+// Stack
+var stack = [];
+stack.push(2);       // stack is now [2]
+stack.push(5);       // stack is now [2, 5]
+var i = stack.pop(); // stack is now [2]
+alert(i);            // displays 5
+
+// Queue
+var queue = [];
+queue.push(2);         // queue is now [2]
+queue.push(5);         // queue is now [2, 5]
+var i = queue.shift(); // queue is now [5]
+alert(i);              // displays 2
+
+
+
 
 
 
