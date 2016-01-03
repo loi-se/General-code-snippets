@@ -17,6 +17,6 @@ FROM
 WHERE (`city`.`Name` = 'Den-Haag');
 
 
-/* ---------------------2. 2jours database */
+/* ---------------------2.  */
 
 
