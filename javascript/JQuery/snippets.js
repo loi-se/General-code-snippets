@@ -27,4 +27,5 @@ function OnSuccess(response) {
     alert('Your OS: ' + OSName);
 }
 
-<script>
+
+</script>
