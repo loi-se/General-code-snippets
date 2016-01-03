@@ -98,6 +98,7 @@ with (expression) {
 
 
 //-------------------------------- 2. Data Structures:
+
 // -----------Array
 var fruits = ["Apple", "Orange", "Donkey"];
 
@@ -132,10 +133,31 @@ var i = queue.shift(); // queue is now [5]
 alert(i);              // displays 2
 
 
+//--------Dictionairy
+var dictionary = {
+    "sample1": 1,
+    "sample2": 2
+}
 
+if(dictionary.hasOwnProperty("sample1"))
+    console.log("sample1 key found and its value is"+ dictionary["sample1]);
 
+//
 
+// ------Hashtable
+var hashPetName = {
+    dog: "Rex",
+    cat: "Mistigri"
+  }
+  
+  console.log("My dog's name is " + hashPetName["dog"]
+      + " and my cat's name is " + hashPetName["cat"] );
 
+// Iterate trough it:
+for (var key in hashPetName){
+  console.log(key + " -> " + hashPetName[key]));   
+  // if (key == "name") doSomething();
+}
 
 
 
