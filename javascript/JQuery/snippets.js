@@ -28,9 +28,17 @@ function OnSuccess(response) {
 }
 
 //---------------------------------- 0. Jquery CSS selector examples
-
-
-
-
-
+ 
+$(document).ready(function () {
+  HighLightRowsLessThanColumnValue('gvProducts', 3, 400);
+});
+ 
+function HighLightRowsLessThanColumnValue(gridviewID, columnIndex, value) {
+  $("#" + gridviewID + " td:nth-child(" + columnIndex + ")").each(function () {
+    if (parseInt($(this).text()) <= value) {
+      $(this).parent("tr").css("background-color", "Lavender ");
+    }
+  });
+}
+ 
 </script>
