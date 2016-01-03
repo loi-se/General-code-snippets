@@ -1,14 +1,14 @@
 
-// -----------1. General
+/* ---------------------------------------------1. General */
 
-// class selector:
+/*-------  class selector: */
 
 .center {
     text-align: center;
     color: red;
 }
 
-// ID selector:
+/*--------- ID selector: */
 
 #para1 {
     text-align: center;
