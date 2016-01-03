@@ -140,9 +140,9 @@ var dictionary = {
 }
 
 if(dictionary.hasOwnProperty("sample1"))
+{
     console.log("sample1 key found and its value is"+ dictionary["sample1]);
-
-//
+}
 
 // ------Hashtable
 var hashPetName = {
