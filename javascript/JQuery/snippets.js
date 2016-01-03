@@ -27,5 +27,10 @@ function OnSuccess(response) {
     alert('Your OS: ' + OSName);
 }
 
+//---------------------------------- 0. Jquery CSS selector examples
+
+
+
+
 
 </script>
