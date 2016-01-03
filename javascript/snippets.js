@@ -1,5 +1,7 @@
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
 <script type = "text/javascript">
+
+// Ajax call
 function ShowCurrentTime() {
     $.ajax({
         type: "POST",
@@ -16,7 +18,6 @@ function ShowCurrentTime() {
 
 function OnSuccess(response) {
     alert(response.d);
-
     var OSName = "Unknown OS";
     if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
     if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
@@ -24,7 +25,71 @@ function OnSuccess(response) {
     if (navigator.appVersion.indexOf("Linux") != -1) OSName = "Linux";
 
     alert('Your OS: ' + OSName);
-
-    //alert("hi");
 }
+
+// 1. Control structures
+
+//If
+if (a === b) {
+  document.body.innerHTML += "a equals b";
+}
+
+// If else
+if (a === b) {
+  document.body.innerHTML += "a equals b";
+} else if (a === c) {
+  document.body.innerHTML += "a equals c";
+} else {
+  document.body.innerHTML += "a does not equal either b or c";
+}
+
+// While loop
+while (c < 10) {
+  c += 1;
+  // …
+}
+
+// do while loop
+do {
+  c += 1;
+} while (c < 10);
+
+// for loop
+var c;
+for (c = 0; c < 10; c += 1) {
+  // …
+}
+
+// for each loop
+for (element in object) {
+  // …
+}
+
+// Switch
+switch(i) {
+case 1:
+  // …
+  break;
+case 2:
+  // …
+  break;
+default:
+  // …
+  break;
+}
+
+// With
+with (expression) {
+  // statement
+}
+
+
+
+
+
+
+
+
+
+
 </script>
