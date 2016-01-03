@@ -30,12 +30,12 @@ function OnSuccess(response) {
 
 // -----------------------1. Control structures
 
-//If
+//-------------If
 if (a === b) {
   document.body.innerHTML += "a equals b";
 }
 
-// If else
+//----------- If else
 if (a === b) {
   document.body.innerHTML += "a equals b";
 } else if (a === c) {
@@ -44,18 +44,18 @@ if (a === b) {
   document.body.innerHTML += "a does not equal either b or c";
 }
 
-// While loop
+//------------- While loop
 while (c < 10) {
   c += 1;
   // …
 }
 
-// do while loop
+//-----------do while loop
 do {
   c += 1;
 } while (c < 10);
 
-// for loop
+//-------------for loop
 var c;
 for (c = 0; c < 10; c += 1) {
   // …
@@ -66,12 +66,12 @@ for (i=0;i<100;i++) {
 }
 
 
-// for each loop
+//-------------for each loop
 for (element in object) {
   // …
 }
 
-// Switch
+//--------------Switch
 switch(i) {
 case 1:
   // …
@@ -84,7 +84,7 @@ default:
   break;
 }
 
-// With
+//--------------With
 with (expression) {
   // statement
 }
