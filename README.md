@@ -57,6 +57,9 @@ https://msdn.microsoft.com/en-us/library/ms178472.aspx?f=255&MSPPError=-21472173
 Ajax calls:<br>
 http://www.aspsnippets.com/Articles/Call-ASPNet-Page-Method-using-jQuery-AJAX-Example.aspx
 <br>
+
+JQuery documentation:
+http://jquery.com/
 <br>
 
 
