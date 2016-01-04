@@ -58,7 +58,7 @@ Ajax calls:<br>
 http://www.aspsnippets.com/Articles/Call-ASPNet-Page-Method-using-jQuery-AJAX-Example.aspx
 <br>
 
-JQuery documentation:
+JQuery documentation:<br>
 http://jquery.com/
 <br>
 
