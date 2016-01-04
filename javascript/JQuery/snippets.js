@@ -42,5 +42,26 @@ function HighLightRowsLessThanColumnValue(gridviewID, columnIndex, value) {
     }
   });
 }
+
+
+// Loop trough all checkboxes:
+
+  var toggleCalculaties = $("#toggleCalculaties");
+    var toggleCalculaties = $("#toggleCalculaties");    
+    var checkAll = toggleCalculaties.is(":checked");
+    
+    if (checkAll) {
+        $("#legePlanning").removeProp("checked").removeAttr("checked");
+    } 
+
+  $("input.chkCalc").each(function () {
+        if (checkAll) {
+            $(this).prop("checked", true);
+        } else {
+            $(this).removeProp("checked").removeAttr("checked");
+        }
+    });
+
+
  
 </script>
