@@ -26,6 +26,10 @@ https://www.jetbrains.com/resharper/
 Firebug:<br>
 https://addons.mozilla.org/nl/firefox/addon/firebug/
 
+
+Fiddler: <br>
+http://www.telerik.com/fiddler
+
 <br>
 <br>
 
