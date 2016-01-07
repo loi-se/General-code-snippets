@@ -63,5 +63,23 @@ function HighLightRowsLessThanColumnValue(gridviewID, columnIndex, value) {
     });
 
 
- 
+   // Haal alle calcIds op uit de checkboxes van de geselecteerde calculatieregels "8237, 8239":
+        var checkboxes = $("input.chkCalc");
+        var calcIds = "";
+        checkboxes.each(function () {
+            var chk = $(this);
+            if (chk.is(":checked")) {
+                //alert(chk.attr('chk_'));
+                calcIds = calcIds + chk.val() + ",";
+                //alert(chk.val());
+                //alert($('#chk_').for);
+                //enableAlleCalculaties = false;
+            }
+        });
+
+        // Verwijder de laatste komma van de string
+        calcIds = calcIds.slice(0, -1);
+
+        alert(calcIds);
+
 </script>
