@@ -99,9 +99,10 @@ function HighLightRowsLessThanColumnValue(gridviewID, columnIndex, value) {
      // Second column in table:
      headertext = $('div.wrapper td.title').eq(2).text();
     $('div.wrapper td.title').each(function (counter) {
-		 if (counter == 2) {
-		    headertext =  ($(this).text());
-		    }
-		  });
+	if (counter == 2) 
+	{
+	headertext =  ($(this).text());
+	}
+	});
 
 </script>
