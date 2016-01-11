@@ -27,9 +27,9 @@ function OnSuccess(response) {
     alert('Your OS: ' + OSName);
 }
 
-//---------------------------------- 0. Jquery CSS selector examples
+//---------------------------------- 1. Jquery CSS selector examples
  
-// ----- 
+// 1.1----- 
  
 $(document).ready(function () {
   HighLightRowsLessThanColumnValue('gvProducts', 3, 400);
@@ -44,7 +44,7 @@ function HighLightRowsLessThanColumnValue(gridviewID, columnIndex, value) {
 }
 
 
-// Loop trough all checkboxes:
+// 1.2-------Loop trough all checkboxes:
 
   var toggleCalculaties = $("#toggleCalculaties");
     var toggleCalculaties = $("#toggleCalculaties");    
@@ -63,7 +63,7 @@ function HighLightRowsLessThanColumnValue(gridviewID, columnIndex, value) {
     });
 
 
-   // Haal alle calcIds op uit de checkboxes van de geselecteerde calculatieregels "8237, 8239":
+   // 1.3-------- Haal alle calcIds op uit de checkboxes van de geselecteerde calculatieregels "8237, 8239":
         var checkboxes = $("input.chkCalc");
         var calcIds = "";
         checkboxes.each(function () {
@@ -82,12 +82,26 @@ function HighLightRowsLessThanColumnValue(gridviewID, columnIndex, value) {
 
         alert(calcIds);
         
-    // Find class within another class with Jquery:
+    // 1.4------ Find class within another class with Jquery:
+    
    // <div class="wrapper">
     //<div class="title">
        // find me!
     //</div>
     //</div>
      headertext = $('.wrapper .title').text();
+     // of
+     headertext = $('div.wrapper td.title:first').text();
+     
+     // Last column in table:
+     headertext = $('div.wrapper td.title:last').text();
+     
+     // Second column in table:
+     headertext = $('div.wrapper td.title').eq(2).text();
+    $('div.wrapper td.title').each(function (counter) {
+		 if (counter == 2) {
+		    headertext =  ($(this).text());
+		    }
+		  });
 
 </script>
