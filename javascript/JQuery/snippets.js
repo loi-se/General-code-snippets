@@ -90,6 +90,7 @@ function HighLightRowsLessThanColumnValue(gridviewID, columnIndex, value) {
     //</div>
     //</div>
      headertext = $('.wrapper .title').text();
+     headertext = $('.wrapper > .title').text();
      // of
      headertext = $('div.wrapper td.title:first').text();
      
