@@ -81,5 +81,13 @@ function HighLightRowsLessThanColumnValue(gridviewID, columnIndex, value) {
         calcIds = calcIds.slice(0, -1);
 
         alert(calcIds);
+        
+    // Find class within another class with Jquery:
+   // <div class="wrapper">
+    //<div class="title">
+       // find me!
+    //</div>
+    //</div>
+     headertext = $('.wrapper .title').text();
 
 </script>
