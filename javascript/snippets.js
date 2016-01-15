@@ -144,5 +144,15 @@ for (var key in hashPetName){
   // if (key == "name") doSomething();
 }
 
+// Call function with 2 parameters:
+sb.Append("<tr onclick='ToonPlanning(" + planning.ProjectId + ", " + planning.PlanningId + ")'>");
+
+function ToonPlanning(projectId, planningId) {
+    ShowLoader();
+    setTimeout(function () {
+        window.parent.location.href = "/project/planning/______.aspx?projectId=" + projectId + "&planningId=" + planningId;
+    }, 25);
+}
+
 
 </script>
