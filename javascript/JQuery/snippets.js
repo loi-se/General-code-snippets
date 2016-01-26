@@ -105,5 +105,57 @@ function HighLightRowsLessThanColumnValue(gridviewID, columnIndex, value) {
 	headertext =  ($(this).text());
 	}
 	});
+	
+	
+	
+	function Opslaan() {
+
+            $(document).ready(function () {
+                //alert("opslaan");
+
+                //var i = 0;
+                //var t = document.getElementById('fx');
+
+                $("#fx tr").each(function (i, row) {
+                    var $row = $(row);
+                    var legendaId = $row[0].id.replace("legenda_", "");
+                    var sortindex = $row.find("td:eq(3)").find("input").val();
+
+                    //alert(legendaId);
+                    //alert(sortindex);
+
+                    $.ajax({
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        url: "/BackOffice/Legenda/Legenda.aspx/UpdateSortIndex",
+                        cache: false,
+                        dataType: "json",
+                        data: JSON.stringify({
+                            'legendaId': legendaId,
+                            'SortIndex' : sortindex
+                        }),
+                        beforeSend: function () {
+                            ShowLoader();
+                        },
+                        success: function (data) {
+
+                            if (typeof (data) == "object" && data.d) {
+                                tr.remove();
+                            } else {
+                                ShowAlertBox("De sortindex kan niet gewijzigd worden!", 420, 130);
+                            }
+
+                        },
+                        error: function () {
+                            ShowAlertBox("De sortindex kan niet gewijzigd worden!", 420, 130);
+                        },
+                        complete: function () {
+                            HideLoader();
+                        }
+                    });
+
+                });
+            });
+        }
 
 </script>
