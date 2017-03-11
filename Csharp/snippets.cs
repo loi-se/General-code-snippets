@@ -230,3 +230,34 @@
         return html;
 
 
+       // -----------------------3. Methods:
+
+       // Anyone can call me
+        public int SomeMethod() { return 1; } 
+
+        // Only classes in the same assembly (project) can call me
+        internal int SomeMethod() { return 1; } 
+
+        // I can only be called from within the same class
+        private int SomeMethod() { return 1; }
+
+        // I can only be called from within the same class, or child classes
+        protected int SomeMethod() { return 1; }
+
+
+
+        public void SomeMethod() 
+        { 
+         /* I don't need to return anything */ 
+        }
+
+
+        public int SomeMethod() 
+        { 
+          int x = 5;      
+          return x;
+         /* I return something */ 
+        }
+
+
+
