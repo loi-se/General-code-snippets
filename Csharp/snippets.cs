@@ -284,4 +284,18 @@
         }
 
 
+        // -------------------------- 4. Regular Expressions:
+
+        Regex regex = new Regex(@"\d+");
+        Match match = regex.Match("Dot 55 Perls");
+        if (match.Success)
+        {
+           string wholeString = match.Groups[0];
+           string firstPartOfString = match.Groups[1];
+           string secondPartOfString = match.Groups[2];
+        }
+
+
+        
+
 
