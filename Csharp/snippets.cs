@@ -33,6 +33,30 @@
             // Condition1, Condition2, and Condition3 are false.
         }
 
+        //------------------------Operators:
+        int a = 8;
+        int b = 9;
+        
+        // If values are not equal:
+        if (a != b)
+        {
+                
+        }
+        // Equal or not:
+        else if (a == b)
+        {
+        // Or operator
+        }
+        else if (a == b || a > b)
+        {
+        // And operator   
+        }
+        else if (a == b && b > a)
+        {
+                
+        }
+        
+
         //------------- While loop
         int sum = 0;
         int i = 0;
