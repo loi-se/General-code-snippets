@@ -55,6 +55,17 @@
         {
                 
         }
+
+        Boolean value;
+        
+        //false:
+        if (!value)
+        {            
+        }
+        //false:
+        else if (value == false)
+        {
+        }
         
 
         //------------- While loop
