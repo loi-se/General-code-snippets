@@ -67,6 +67,9 @@
         {
         }
         
+        if (visit.Inspector.InspectorUid == defaultInspector.InspectorUid || (selectedStatus.Status != null && selectedStatus.Status.Value == Status.Planned) || Utility.IsServer)                        
+        {                                                  
+        }
 
         //------------- While loop
         int sum = 0;
